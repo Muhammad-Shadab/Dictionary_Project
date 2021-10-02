@@ -27,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
     EditText editText;
     TextView textViewText, textViewWord, textViewPartsOfSpeech, textViewDefinition, textViewExample;
     ImageView imageView;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-      editText = findViewById(R.id.editText);
+     editText = findViewById(R.id.editText);
         imageView = findViewById(R.id.imageView);
         textViewText = findViewById(R.id.textViewText);
         textViewWord = findViewById(R.id.textViewWord);
@@ -66,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
 
     private void process(String word) {
 
@@ -120,4 +123,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 }
